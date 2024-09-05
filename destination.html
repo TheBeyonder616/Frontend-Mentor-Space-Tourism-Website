@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body
+    class="body-destination body--lazy"
+    data-body
+    data-bg-mobile="./assets/destination/background-destination-mobile.jpg"
+    data-bg-tablet="./assets/destination/background-destination-tablet.jpg"
+    data-bg-desktop="./assets/destination/background-destination-desktop.jpg"
+  >
+    <!-- ================================={Header}============================= -->
+    <header class="header" data-header>
+      <!-- Navigation------ -->
+      <nav class="nav">
+        <!-- Logo & Menu -->
+        <ul class="nav__list">
+          <li class="nav__logo">
+            <img
+              src="./assets/shared/logo.svg"
+              alt="an icon of space tourism logo"
+            />
+          </li>
+          <li class="nav__menu">
+            <img
+              role="menu"
+              data-open-menu
+              src="./assets/shared/icon-hamburger.svg"
+              alt="an hamburger menu to open the navigation"
+            />
+          </li>
+        </ul>
+        <!-- =================={Links}===============-->
+        <section class="nav__tab">
+          <ul class="nav__tab__link">
+            <!-- Home -->
+            <li>
+              <a
+                class="tab__link active--link"
+                href="./index.html"
+                data-links-tab
+              >
+                00 Home</a
+              >
+            </li>
+            <!-- Destination -->
+            <li>
+              <a class="tab__link" href="./destination.html" data-links-tab
+                >01 Destination</a
+              >
+            </li>
+            <!-- Crew -->
+            <li>
+              <a class="tab__link" href="./crew.html" data-links-tab>02 Crew</a>
+            </li>
+            <!-- Technology -->
+            <li>
+              <a class="tab__link" href="./technology.html" data-links-tab
+                >03 Technology</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!--===================={Menu is open}=============-->
+        <article class="nav__menu__open hide" data-menu-is-open>
+          <section class="nav__menu__open__overlay" data-menu-overlay></section>
+          <section class="nav__menu__open__content" data-menu-content>
+            <!-- Close -->
+            <div class="icon-wrapper">
+              <div class="close__menu">
+                <img
+                  role="button"
+                  data-close-menu
+                  src="./assets/shared/icon-close.svg"
+                  alt="an  icon to close the navigation"
+                />
+              </div>
+            </div>
+            <!-- {Contetns} -->
+            <ul class="nav__mobile__link" data-menu-link-mobile>
+              <!-- Home -->
+              <li>
+                <a
+                  class="mobile__link active--link"
+                  href="./index.html"
+                  data-links-mobile
+                >
+                  00 Home</a
+                >
+              </li>
+              <!-- Destination -->
+              <li>
+                <a
+                  class="mobile__link"
+                  href="./destination.html"
+                  data-links-mobile
+                  >01 Destination</a
+                >
+              </li>
+              <!-- Crew -->
+              <li>
+                <a class="mobile__link" href="./crew.html" data-links-mobile
+                  >02 Crew</a
+                >
+              </li>
+              <!-- Technology -->
+              <li>
+                <a
+                  class="mobile__link"
+                  href="./technology.html"
+                  data-links-mobile
+                  >03 Technology</a
+                >
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--==============================={PopUpButton}====================-->
+        <section class="nav__popup" data-popup>
+          <a href="#" class="nav__popup__btn">
+            <img
+              src="./assets/shared/icon-arrow.svg"
+              alt="An arrow icon used for navigating to the header"
+            />
+          </a>
+        </section>
+      </nav>
+    </header>
+
+    <!-- ================================={Main Index}============================= -->
+    <main class="main main-destination">
+      <!-- ====================={Heaading}===========-->
+      <section class="main__heading">
+        <h2 class="heading-secondary">
+          <span> 01 </span> Pick your destination
+        </h2>
+      </section>
+      <!-- ====================={Destinatio}===========-->
+      <article class="destination">
+        <!-- ====================={Slider}===========-->
+
+        <section class="destination__planet">
+          <!-- {Moon} -->
+          <div
+            class="destination__planet__card lazy__img--container"
+            data-destination-card
+          >
+            <picture data-picture>
+              <!-- WebP format (preferred if supported) -->
+              <source
+                data-srcset="./assets/destination/image-moon.webp"
+                type="image/webp"
+              />
+              <!-- PNG format (fallback) -->
+              <source
+                data-srcset="./assets/destination/image-moon.png"
+                type="image/png"
+              />
+              <!-- Default  -->
+              <img
+                class="lazy--img"
+                data-src="./assets/destination/image-moon.png"
+                alt="An Image of the moon"
+              />
+            </picture>
+          </div>
+          <!--============================{Mars}==================-->
+          <div
+            class="destination__planet__card lazy__img--container"
+            data-destination-card
+          >
+            <picture data-picture>
+              <!-- WebP format (preferred if supported) -->
+              <source
+                data-srcset="./assets/destination/image-mars.webp"
+                type="image/webp"
+              />
+              <!-- PNG format (fallback) -->
+              <source
+                data-srcset="./assets/destination/image-mars.png"
+                type="image/png"
+              />
+              <!-- Default  -->
+              <img
+                class="lazy--img"
+                data-src="./assets/destination/image-mars.png"
+                alt="An Image of the mars"
+              />
+            </picture>
+          </div>
+          <!-- {Europa} -->
+          <div
+            class="destination__planet__card lazy__img--container"
+            data-destination-card
+          >
+            <picture data-picture>
+              <!-- WebP format (preferred if supported) -->
+              <source
+                data-srcset="./assets/destination/image-europa.webp"
+                type="image/webp"
+              />
+              <!-- PNG format (fallback) -->
+              <source
+                data-srcset="./assets/destination/image-europa.png"
+                type="image/png"
+              />
+              <!-- Default  -->
+              <img
+                class="lazy--img"
+                data-src="./assets/destination/image-europa.png"
+                alt="An Image of the europa"
+              />
+            </picture>
+          </div>
+          <!--======================{Titan}=================-->
+          <div
+            class="destination__planet__card lazy__img--container"
+            data-destination-card
+          >
+            <picture data-picture>
+              <!-- WebP format (preferred if supported) -->
+              <source
+                data-srcset="./assets/destination/image-titan.webp"
+                type="image/webp"
+              />
+              <!-- PNG format (fallback) -->
+              <source
+                data-srcset="./assets/destination/image-titan.png"
+                type="image/png"
+              />
+              <!-- Default  -->
+              <img
+                class="lazy--img"
+                data-src="./assets/destination/image-titan.png"
+                alt="An Image of the titan"
+              />
+            </picture>
+          </div>
+        </section>
+        <!-- ====================={Slider-Caption & Controller}===========-->
+        <section class="destination__details">
+          <!-- {Controller} -->
+          <section class="destination__control">
+            <ul class="planet-name">
+              <li>
+                <a class="control control--active" data-destination-control="0"
+                  >Moon
+                </a>
+              </li>
+              <li>
+                <a class="control" data-destination-control="1">Mars </a>
+              </li>
+              <li>
+                <a class="control" data-destination-control="2">Europa </a>
+              </li>
+              <li>
+                <a class="control" data-destination-control="3">Titan </a>
+              </li>
+            </ul>
+          </section>
+          <!-- ====================={Slider-Caption}===========-->
+
+          <section class="destination__planet__caption">
+            <div class="wrapper">
+              <!-- {Moon} -->
+              <div class="planet__caption" data-destination-caption>
+                <h2 class="heaading-third">Moon</h2>
+
+                <p class="heading-p">
+                  See our planet as you’ve never seen it before. A perfect
+                  relaxing trip away to help regain perspective and come back
+                  refreshed. While you’re there, take in some history by
+                  visiting the Luna 2 and Apollo 11 landing sites.
+                </p>
+
+                <hr />
+                <!-- {Distance} -->
+                <div class="distance__wrapper">
+                  <div class="destination__distance">
+                    <h3 class="heading-fourth">Avg. distance</h3>
+                    <h4 class="heading-fifth">384,400 km</h4>
+                  </div>
+                  <!-- {Travel Time} -->
+                  <div class="destination__travel__time">
+                    <h3 class="heading-fourth">Est. travel time</h3>
+                    <h4 class="heading-fifth">3 days</h4>
+                  </div>
+                </div>
+              </div>
+              <!--===================================={Mars}=====================-->
+              <div class="planet__caption" data-destination-caption>
+                <h2 class="heaading-third">Mars</h2>
+
+                <p class="heading-p">
+                  Don’t forget to pack your hiking boots. You’ll need them to
+                  tackle Olympus Mons, the tallest planetary mountain in our
+                  solar system. It’s two and a half times the size of Everest!
+                </p>
+
+                <hr />
+                <!-- {Distance} -->
+                <div class="distance__wrapper">
+                  <div class="destination__distance">
+                    <h3 class="heading-fourth">Avg. distance</h3>
+                    <h4 class="heading-fifth">225 mil. km</h4>
+                  </div>
+
+                  <!-- {Travel Time} -->
+                  <div class="destination__travel__time">
+                    <h3 class="heading-fourth">Est. travel time</h3>
+                    <h4 class="heading-fifth">9 months</h4>
+                  </div>
+                </div>
+              </div>
+              <!--==============================={Europa}===============================-->
+              <div class="planet__caption" data-destination-caption>
+                <h2 class="heaading-third">Europa</h2>
+
+                <p class="heading-p">
+                  The smallest of the four Galilean moons orbiting Jupiter,
+                  Europa is a winter lover’s dream. With an icy surface, it’s
+                  perfect for a bit of ice skating, curling, hockey, or simple
+                  relaxation in your snug wintery cabin.
+                </p>
+
+                <hr />
+                <!-- {Distance} -->
+                <div class="distance__wrapper">
+                  <div class="destination__distance">
+                    <h3 class="heading-fourth">Avg. distance</h3>
+                    <h4 class="heading-fifth">628 mil. km</h4>
+                  </div>
+                  <!-- {Travel Time} -->
+                  <div class="destination__travel__time">
+                    <h3 class="heading-fourth">Est. travel time</h3>
+                    <h4 class="heading-fifth">3 years</h4>
+                  </div>
+                </div>
+              </div>
+              <!--==============================={ Titan}===============================-->
+              <div class="planet__caption" data-destination-caption>
+                <h2 class="heaading-third">Titan</h2>
+
+                <p class="heading-p">
+                  The only moon known to have a dense atmosphere other than
+                  Earth, Titan is a home away from home (just a few hundred
+                  degrees colder!). As a bonus, you get striking views of the
+                  Rings of Saturn.
+                </p>
+
+                <hr />
+                <!-- {Distance} -->
+                <div class="distance__wrapper">
+                  <div class="destination__distance">
+                    <h3 class="heading-fourth">Avg. distance</h3>
+                    <h4 class="heading-fifth">1.6 bil</h4>
+                  </div>
+                  <!-- {Travel Time} -->
+                  <div class="destination__travel__time">
+                    <h3 class="heading-fourth">Est. travel time</h3>
+                    <h4 class="heading-fifth">7 years</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body
+    class="body-crew body--lazy"
+    data-body
+    data-bg-mobile="./assets/crew/background-crew-mobile.jpg"
+    data-bg-tablet="./assets/crew/background-crew-tablet.jpg"
+    data-bg-desktop="./assets/crew/background-crew-desktop.jpg"
+  >
+    <!-- ================================={Header}============================= -->
+    <header class="header" data-header>
+      <!-- Navigation------ -->
+      <nav class="nav">
+        <!-- Logo & Menu -->
+        <ul class="nav__list">
+          <li class="nav__logo">
+            <img
+              src="./assets/shared/logo.svg"
+              alt="an icon of space tourism logo"
+            />
+          </li>
+          <li class="nav__menu">
+            <img
+              role="menu"
+              data-open-menu
+              src="./assets/shared/icon-hamburger.svg"
+              alt="an hamburger menu to open the navigation"
+            />
+          </li>
+        </ul>
+        <!-- =================={Links}===============-->
+        <section class="nav__tab">
+          <ul class="nav__tab__link">
+            <!-- Home -->
+            <li>
+              <a
+                class="tab__link active--link"
+                href="./index.html"
+                data-links-tab
+              >
+                00 Home</a
+              >
+            </li>
+            <!-- Destination -->
+            <li>
+              <a class="tab__link" href="./destination.html" data-links-tab
+                >01 Destination</a
+              >
+            </li>
+            <!-- Crew -->
+            <li>
+              <a class="tab__link" href="./crew.html" data-links-tab>02 Crew</a>
+            </li>
+            <!-- Technology -->
+            <li>
+              <a class="tab__link" href="./technology.html" data-links-tab
+                >03 Technology</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!--===================={Menu is open}=============-->
+        <article class="nav__menu__open hide" data-menu-is-open>
+          <section class="nav__menu__open__overlay" data-menu-overlay></section>
+          <section class="nav__menu__open__content" data-menu-content>
+            <!-- Close -->
+            <div class="icon-wrapper">
+              <div class="close__menu">
+                <img
+                  role="button"
+                  data-close-menu
+                  src="./assets/shared/icon-close.svg"
+                  alt="an  icon to close the navigation"
+                />
+              </div>
+            </div>
+            <!-- {Contetns} -->
+            <ul class="nav__mobile__link" data-menu-link-mobile>
+              <!-- Home -->
+              <li>
+                <a
+                  class="mobile__link active--link"
+                  href="./index.html"
+                  data-links-mobile
+                >
+                  00 Home</a
+                >
+              </li>
+              <!-- Destination -->
+              <li>
+                <a
+                  class="mobile__link"
+                  href="./destination.html"
+                  data-links-mobile
+                  >01 Destination</a
+                >
+              </li>
+              <!-- Crew -->
+              <li>
+                <a class="mobile__link" href="./crew.html" data-links-mobile
+                  >02 Crew</a
+                >
+              </li>
+              <!-- Technology -->
+              <li>
+                <a
+                  class="mobile__link"
+                  href="./technology.html"
+                  data-links-mobile
+                  >03 Technology</a
+                >
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--==============================={PopUpButton}====================-->
+        <section class="nav__popup" data-popup>
+          <a href="#" class="nav__popup__btn">
+            <img
+              src="./assets/shared/icon-arrow.svg"
+              alt="An arrow icon used for navigating to the header"
+            />
+          </a>
+        </section>
+      </nav>
+    </header>
+
+    <main class="main main-crew">
+      <!-- ====================={Heaading}===========-->
+      <section class="main__heading">
+        <h2 class="heading-secondary"><span> 02 </span> Meet your crew</h2>
+      </section>
+
+      <article class="crew">
+        <!-- ======================{Crew Info}============================-->
+        <section class="crew__caption">
+          <div class="wrapper-caption">
+            <!-- {Commander} -->
+            <div class="crew__caption__card" data-crew-caption>
+              <h4 class="heading-six">Commander</h4>
+              <h3 class="heading-fifth">Douglas Hurley</h3>
+
+              <p class="heading-p">
+                Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot and former NASA astronaut. He launched into space
+                for the third time as commander of Crew Dragon Demo-2.
+              </p>
+            </div>
+            <!-- {Flight Engineer} -->
+
+            <div class="crew__caption__card" data-crew-caption>
+              <h4 class="heading-six">Flight Engineer</h4>
+              <h3 class="heading-fifth">Anousheh Ansari</h3>
+
+              <p class="heading-p">
+                Anousheh Ansari is an Iranian American engineer and co-founder
+                of Prodea Systems. Ansari was the fourth self-funded space
+                tourist, the first self-funded woman to fly to the ISS, and the
+                first Iranian in space.
+              </p>
+            </div>
+            <!-- {Pilot} -->
+            <div class="crew__caption__card" data-crew-caption>
+              <h4 class="heading-six">Pilot</h4>
+              <h3 class="heading-fifth">Victor Glover</h3>
+
+              <p class="heading-p">
+                Pilot on the first operational flight of the SpaceX Crew Dragon
+                to the International Space Station. Glover is a commander in the
+                U.S. Navy where he pilots an F/A-18.He was a crew member of
+                Expedition 64, and served as a station systems flight engineer.
+              </p>
+            </div>
+            <!-- {Mission Specialist} -->
+
+            <div class="crew__caption__card" data-crew-caption>
+              <h4 class="heading-six">Mission Specialist</h4>
+              <h3 class="heading-fifth">Mark Shuttleworth</h3>
+
+              <p class="heading-p">
+                Mark Richard Shuttleworth is the founder and CEO of Canonical,
+                the company behind the Linux-based Ubuntu operating system.
+                Shuttleworth became the first South African to travel to space
+                as a space tourist.
+              </p>
+            </div>
+          </div>
+          <!-- {Controller} -->
+          <div class="crew__control">
+            <div class="control control--active" data-crew-control="0"></div>
+            <div class="control" data-crew-control="1"></div>
+            <div class="control" data-crew-control="2"></div>
+            <div class="control" data-crew-control="3"></div>
+          </div>
+        </section>
+        <!-- ======================{Crew IMage}============================-->
+        <section class="crew__figure">
+          <div class="wrapper">
+            <!-- {Captain} -->
+            <div class="crew__figure__card lazy__img--container" data-crew-card>
+              <picture data-picture>
+                <!-- WebP format (preferred if supported) -->
+                <source
+                  data-srcset="./assets/crew/image-douglas-hurley.webp"
+                  type="image/webp"
+                />
+                <!-- PNG format (fallback) -->
+                <source
+                  data-srcset="./assets/crew/image-douglas-hurley.png"
+                  type="image/png"
+                />
+                <!-- Default  -->
+                <img
+                  class="lazy--img"
+                  data-src="./assets/crew/image-douglas-hurley.png"
+                  alt="An Image of the the captain  Mr Douglas"
+                />
+              </picture>
+            </div>
+            <!---============================={Flight E}========-->
+            <div class="crew__figure__card lazy__img--container" data-crew-card>
+              <picture data-picture>
+                <!-- WebP format (preferred if supported) -->
+                <source
+                  data-srcset="./assets/crew/image-anousheh-ansari.webp"
+                  type="image/webp"
+                />
+                <!-- PNG format (fallback) -->
+                <source
+                  data-srcset="./assets/crew/image-anousheh-ansari.png"
+                  type="image/png"
+                />
+                <!-- Default  -->
+                <img
+                  class="lazy--img"
+                  data-src="./assets/crew/image-anousheh-ansari.png"
+                  alt="An Image of the the flight engineer Anousheh Ansari"
+                />
+              </picture>
+            </div>
+            <!--=================={Pilot}====================-->
+            <div class="crew__figure__card lazy__img--container" data-crew-card>
+              <picture data-picture>
+                <!-- WebP format (preferred if supported) -->
+                <source
+                  data-srcset="./assets/crew/image-victor-glover.webp"
+                  type="image/webp"
+                />
+                <!-- PNG format (fallback) -->
+                <source
+                  data-srcset="./assets/crew/image-victor-glover.png"
+                  type="image/png"
+                />
+                <!-- Default  -->
+                <img
+                  class="lazy--img"
+                  data-src="./assets/crew/image-victor-glover.png"
+                  alt="An Image of the the pilot  Mr Victor Glover"
+                />
+              </picture>
+            </div>
+            <!--=============================={Mission Specailist}=====================-->
+            <div class="crew__figure__card lazy__img--container" data-crew-card>
+              <picture data-picture>
+                <!-- WebP format (preferred if supported) -->
+                <source
+                  data-srcset="./assets/crew/image-mark-shuttleworth.webp"
+                  type="image/webp"
+                />
+                <!-- PNG format (fallback) -->
+                <source
+                  data-srcset="./assets/crew/image-mark-shuttleworth.png"
+                  type="image/png"
+                />
+                <!-- Default  -->
+                <img
+                  class="lazy--img"
+                  data-src="./assets/crew/image-mark-shuttleworth.png"
+                  alt="An Image of the the Mission Specailist Mr Mark Shuttleworth"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
